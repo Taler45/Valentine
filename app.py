@@ -10,7 +10,7 @@ def login ():
     if request.method == "POST":
         name = request.form.get("login_name")
         date = request.form.get("login_date")
-        if name == "Настя" and date == "02-09-2024":
+        if name == "" and date == "": # в змінну name впишіть ім'я яким вас часто називає ваша друга половинка а в змінну date напишіть дату коли ви почали зустірчатись у форматі "XX-XX-XXXX"
             return render_template("index2.html")
         return render_template("logIn.html" , "Неправильно введенні данні")
     else:
@@ -23,7 +23,7 @@ def home():
 
 @app.route("/gallery")
 def gallery():
-    photo_list = os.listdir(r"C:\Users\sasap\OneDrive\Рабочий стол\valentine_site\static\img_gallery2")
+    photo_list = os.listdir(r"") # <-- сюди вкажіть шлях до вашої папки з фото для галереї 
     return render_template("gallery.html", photos = photo_list)
 
 

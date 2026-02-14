@@ -1,7 +1,7 @@
 
 function dateAndTime (){
     let end = new Date()
-    const start = new Date("2024-09-02")
+    const start = new Date("xxxx-xx-xx") // вкажіть дату коли ви почали зустрічатись у форматі xxxx-xx-xx
     let result = end-start
 
     years = Math.floor(result/31536000000)
