@@ -1,0 +1,76 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; /* font-family: 'Montserrat', sans-serif; - для встановлення шрифта*/
+    background: linear-gradient(105deg, #ff4d6d 55%, white 55%);
+
+
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px pink;
+    padding: 30px 20px;
+    border-radius: 5vh;
+    background-color: #bc0325;
+    width: 350px; /* Обмеж ширину, щоб картка була акуратною */
+    gap: 15px;
+
+}
+
+
+
+p {
+    color: white; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+
+input {
+    width: 100%; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 50px;
+    outline: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: 0.3s; 
+}
+
+
+input:focus {
+    box-shadow: 0 0 0 3px #ff99ac; 
+}
+
+
+button {
+    margin-top: 10px; 
+    padding: 15px;
+    background-color: white; 
+    color: #bc0325;
+    border: none;
+    border-radius: 50px; 
+    font-weight: 800; 
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+
+button:hover {
+    transform: scale(1.05); 
+    background-color: #ffe6ea; 
+}

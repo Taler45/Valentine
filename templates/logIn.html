@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_LogIn.css') }}">
+    </head>
+    <body>
+        <form method="post" class="Form">
+            <p>Введи ім'я який я тебе називаю найчастіше: </p>
+            <input type="text" name="login_name"required placeholder="Назва" > <!--required - щоб поля не можна було відправляти пустими тобто якщо користувач нічого не впише то нажати кнопку і відправити буде неможливо-->  
+            <p> Введіть дату коли ми познайомились: </p>
+            <input type="text" name="login_date" required placeholder="XX-XX-XXXX">
+            <button type="submit">Відправити Купідону 💘</button>
+        </form>
+    </body>
+</html>

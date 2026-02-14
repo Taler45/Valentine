@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Валентинка для моєї любімої Анастасії ♥</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>☰</div>
+            <nav>
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('gallery') }}">GALLERY</a>
+                <a href="{{ url_for('about') }}">ABOUT US</a>             
+            </nav>
+        </header>
+        <section class = 'main'>
+            <div class="text">
+                <h1>For my Valentine</h1>
+                <p class="main_text">
+                    Для найбільш працьовитої, люблячої, доброї,
+                    чуйної, смішної, веселої жінки. Одним словом <strong>найкращої</strong> жінки
+                    <strong>Анастасії</strong>!
+                </p>
+                <div id="timer"></div>
+                <script src = "{{ url_for('static', filename ='DateAndTime.js') }}"></script>
+            </div>
+            
+            <div class="picture">
+                <img src="{{ url_for('static', filename='img_gallery/photo_2026-01-16_15-15-19.jpg') }}" class="big-img">
+    
+                <div class="small-images">
+                    <img src="{{ url_for('static', filename='img_gallery/IMG_3127.JPG') }}" id="picture1">
+                    <img src="{{ url_for('static', filename='img_gallery/IMG_3339.JPG') }}" id="picture2">
+                </div>
+            </div>
+        </section>
+        <script src="{{ url_for('static', filename='Heart.js') }}"></script>
+    </body>
+</html>

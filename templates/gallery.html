@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Галерея ♥</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_gallery.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>☰</div>
+            <nav>
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('gallery') }}">GALLERY</a>
+                <a href="{{ url_for('about') }}">ABOUT US</a>             
+            </nav>
+        </header>
+        <section>
+            <h1>Gallery</h1>
+        </section>
+        <div class="gallery-grid">
+            {% for photo in photos %}
+                
+                <div class="card">
+                    <img src="{{ url_for('static', filename='img_gallery2/' + photo) }}" alt="Фото спогад">
+                </div>
+            {% endfor %} 
+        </div>
+    </body>
+</html>
